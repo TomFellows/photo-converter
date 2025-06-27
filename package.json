@@ -1,0 +1,41 @@
+{
+  "name": "photo-convert",
+  "version": "1.0.0",
+  "description": "A utility to convert TIFF images to JPG format",
+  "main": "dist/cli.js",
+  "bin": {
+    "photo-convert": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts"
+  },
+  "keywords": [
+    "image",
+    "conversion",
+    "tiff",
+    "jpg",
+    "utility",
+    "google-drive"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cli-progress": "^3.12.0",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1",
+    "google-auth-library": "^9.0.0",
+    "googleapis": "^128.0.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.6",
+    "@types/fs-extra": "^11.0.0",
+    "@types/node": "^20.0.0",
+    "prettier": "3.5.3",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
